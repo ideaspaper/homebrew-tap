@@ -5,21 +5,21 @@
 class Restclient < Formula
   desc "A powerful command-line HTTP client for .http and .rest files"
   homepage "https://github.com/ideaspaper/restclient"
-  version "0.1.1"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ideaspaper/restclient/releases/download/v0.1.1/restclient_darwin_amd64.tar.gz"
-      sha256 "9c98cee10137bf209cd96b7af3b6ae2977cdfb88e5818919a048e0b28ad787d3"
+      url "https://github.com/ideaspaper/restclient/releases/download/v0.1.3/restclient_darwin_amd64.tar.gz"
+      sha256 "ca1e4f759c5c50e2b26219f9f43c276f621aed06f8dfd9bb48cce906afd7938d"
 
       def install
         bin.install "restclient"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ideaspaper/restclient/releases/download/v0.1.1/restclient_darwin_arm64.tar.gz"
-      sha256 "c341de6971d0c2bad4b3d445e8e76e405d2da20de6d3846dee726f21735a8edb"
+      url "https://github.com/ideaspaper/restclient/releases/download/v0.1.3/restclient_darwin_arm64.tar.gz"
+      sha256 "f126981d699c62bf5d1e4a1faa66952f19106f6bcf015201022429bd8382df52"
 
       def install
         bin.install "restclient"
@@ -29,15 +29,15 @@ class Restclient < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ideaspaper/restclient/releases/download/v0.1.1/restclient_linux_amd64.tar.gz"
-      sha256 "49ba652f6204fd1f93555e1770411ed8b827468dc9c9cdf1e25466d04fb2624d"
+      url "https://github.com/ideaspaper/restclient/releases/download/v0.1.3/restclient_linux_amd64.tar.gz"
+      sha256 "82e7fc58b780ef4e625f182a6bb356ab94cd142803c03fb7ac279525f39849ea"
       def install
         bin.install "restclient"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ideaspaper/restclient/releases/download/v0.1.1/restclient_linux_arm64.tar.gz"
-      sha256 "88e5febab951f3f7511ff8b41cd2d278485ceb15c3f585d67bd5cadca558002e"
+      url "https://github.com/ideaspaper/restclient/releases/download/v0.1.3/restclient_linux_arm64.tar.gz"
+      sha256 "8d37108aedf51fd0175b062bdb9cedb872290f8b723db1b3828984feb7e27bfa"
       def install
         bin.install "restclient"
       end
