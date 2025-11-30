@@ -3,7 +3,7 @@ cask "sheets-mcp" do
   name "sheets-mcp"
   desc "A Model Context Protocol (MCP) server for Google Sheets integration"
   homepage "https://github.com/ideaspaper/sheets-mcp"
-  version "0.1.1"
+  version "0.1.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,28 +14,28 @@ cask "sheets-mcp" do
   on_macos do
     on_intel do
       url "https://github.com/ideaspaper/sheets-mcp/releases/download/v#{version}/sheets-mcp_darwin_amd64.tar.gz"
-      sha256 "eead6da048471c1d5504fd4d9feb65cbb0df9b85c522155423a476ac0e3e5802"
+      sha256 "a2e3b1feacc01f304ef73fceb8e5494121ba27da825897739a0250d190e659c7"
     end
     on_arm do
       url "https://github.com/ideaspaper/sheets-mcp/releases/download/v#{version}/sheets-mcp_darwin_arm64.tar.gz"
-      sha256 "bf979d2a7bc7b1b6e7824e60f7737a1163ec4a95ee7358c1ba25f21333e252d7"
+      sha256 "45def6f8b78be3fcae593a0821e31619ba351f7ee069d50bd264572eb8af15ce"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/ideaspaper/sheets-mcp/releases/download/v#{version}/sheets-mcp_linux_amd64.tar.gz"
-      sha256 "244b0006e3f3d9302acbd96d97996435606b4461ebb69d3a25f12c1a4e41bec3"
+      sha256 "800152ec8ca2fb815eff6e2d7174a74f0f3f4e680c8d8adf1ca998d4193cad4f"
     end
     on_arm do
       url "https://github.com/ideaspaper/sheets-mcp/releases/download/v#{version}/sheets-mcp_linux_arm64.tar.gz"
-      sha256 "e805f6437775134cf3d24f1945f0a80a99165d106df61c201539034b0364b3d7"
+      sha256 "e0c30ebb912e8fa59d16d2ce5e2d8a75ed2fdb674703cae6061b6bb826ec3620"
     end
   end
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/sheets-mcp"
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/sheets-mcp"]
     end
   end
 
