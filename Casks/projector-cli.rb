@@ -3,7 +3,7 @@ cask "projector-cli" do
   name "projector-cli"
   desc "A fast and flexible project directory manager for developers"
   homepage "https://github.com/ideaspaper/projector"
-  version "0.1.15"
+  version "0.1.16"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "projector-cli" do
   on_macos do
     on_intel do
       url "https://github.com/ideaspaper/projector/releases/download/v#{version}/projector_darwin_amd64.tar.gz"
-      sha256 "0ed5f34816c909ae6ec9cb13c13af92738c89fc444e0cf5e26814cbec6868313"
+      sha256 "9a357d5c05d3e7100a6f9578f73302c3ffa96990f0937be2b25da6e8e9f1d0eb"
     end
     on_arm do
       url "https://github.com/ideaspaper/projector/releases/download/v#{version}/projector_darwin_arm64.tar.gz"
-      sha256 "039b67fc1dcedb507c3b2798d01b324fc69931356a2a58ae5641d7c7cdadb8d9"
+      sha256 "2b7ed83a13592f37303d8a9c321c2fc44bd2ef827e297e2a64f8f337984364b3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/ideaspaper/projector/releases/download/v#{version}/projector_linux_amd64.tar.gz"
-      sha256 "35b7846bf64c893a132cd4d650646b2e741f31c759c702f5317a4f4ce2557f43"
+      sha256 "95c7c0ec75084c6a7873d3cd3d011d0a2fc8c7ee80372190f9ded2668205077b"
     end
     on_arm do
       url "https://github.com/ideaspaper/projector/releases/download/v#{version}/projector_linux_arm64.tar.gz"
-      sha256 "9309d3098355ce6bbe95c68b60851595dc109d0f1cfd87c3aa26bcc0926b78da"
+      sha256 "e1b95fce91c572caecdd2fdee9c6c62e960f1c719127ed74feee3489dcfbb581"
     end
   end
 
