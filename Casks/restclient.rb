@@ -3,7 +3,7 @@ cask "restclient" do
   name "restclient"
   desc "A powerful command-line HTTP client for .http and .rest files"
   homepage "https://github.com/ideaspaper/restclient"
-  version "0.2.9"
+  version "0.2.11"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "restclient" do
   on_macos do
     on_intel do
       url "https://github.com/ideaspaper/restclient/releases/download/v#{version}/restclient_darwin_amd64.tar.gz"
-      sha256 "1d092653d19ef6d914dc1dc038147cedef1a6f5bab1d30fce619943a3353fdf3"
+      sha256 "baa107147f3d68da9b55b32d420c5dad40658fd8e9bdad211122ed6302675bc7"
     end
     on_arm do
       url "https://github.com/ideaspaper/restclient/releases/download/v#{version}/restclient_darwin_arm64.tar.gz"
-      sha256 "586417551f6fd1f7cae005dabc74fc597071bf4a7c3f183ae4308d89ed7d541c"
+      sha256 "caffb5aabe42382f39b3ea30beec447d9da46bd5719ad9a0fb38f39d082208fe"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/ideaspaper/restclient/releases/download/v#{version}/restclient_linux_amd64.tar.gz"
-      sha256 "8c2647af036f01af1835e7f4d4f4fbad8279164ce8ce36a6d3044c48c29251fa"
+      sha256 "a32a403dc0b503e14181b1231d4afdd088d37e43714d38f429c7d32be18fada9"
     end
     on_arm do
       url "https://github.com/ideaspaper/restclient/releases/download/v#{version}/restclient_linux_arm64.tar.gz"
-      sha256 "136cd44bf3f54c24ddb94ed894d69c0ad8d2fcc6442f9fa99e889f8b3b847221"
+      sha256 "9cac5f9188f768dcaba422b4e0799e4b8900eacfa380b40cdf64d598f7efc3ae"
     end
   end
 
